@@ -354,10 +354,10 @@ h1 {
     top: 0;
 }
 
-.categroy__btn.active .category__text,
+/* .categroy__btn.active .category__text,
 .categroy__btn:hover .category__text {
     padding-left: 0px;
-}
+} */
 
 .category__count {
     background-color: var(--color-dark-blue);
@@ -377,9 +377,9 @@ h1 {
     transition: all var(--animation-duration) ease-in;
 }
 
-.category__text {
-    padding-left: 22px;
-}
+/* .category__text {
+    padding-left: 20px;
+} */
 
 .work__projects {
     display: flex;
@@ -523,4 +523,24 @@ h1 {
         display: none;
     }
 
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 38px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
+
+    .testimonial__avatar {
+        width: 80px;
+        height: 80px;
+    }
 }
