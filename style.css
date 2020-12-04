@@ -44,7 +44,7 @@
     --size-max-width: 1200px;
 
     /* Animation */
-    --animation-duration: 300ms;    
+    --animation-duration: 350ms;    
 }
 
 /* Universal tags : 공통적으로 적용되어야 할 것 */
@@ -319,3 +319,113 @@ h1 {
     color: var(--color-dark-grey);
 }
 
+/* Work */
+
+.work__categories {
+    margin: 40px;
+}
+
+.categroy__btn {
+    border: 1px solid var(--color-grey);
+    border-radius: var(--size-border-redius);
+    font-size: var(--font-regular);
+    padding: 8px 40px;
+    margin: 2px 5px;
+}
+
+.categroy__btn.active,
+.categroy__btn:hover {
+    background-color: var(--color-light-brown);
+    color: var(--color-white);
+}
+
+.categroy__btn.active .category__count,
+.categroy__btn:hover .category__count {
+    opacity: 1;
+    top: 0;
+}
+
+.categroy__btn.active .category__text,
+.categroy__btn:hover .category__text {
+    padding-left: 0px;
+}
+
+.category__count {
+    background-color: var(--color-dark-blue);
+    border-radius: 50%;
+    color: var(--color-white);
+    width: 24px;
+    height: 24px;
+    /* span 때문에 모양이 딱 붙어있음.. inline-block으로 바꿔보기 */
+    display: inline-block;
+    /* 숫자 중간으로 옮기기 */
+    line-height: 24px;
+    position: relative;
+    top: -20px;
+    left: 4px;
+    /* 평소에는 보이지 않게 설정 */
+    opacity: 0;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.category__text {
+    padding-left: 22px;
+}
+
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 250px;
+    margin: 2px;
+    background-color: var(--color-light-white);
+}
+
+.project__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project__description {
+    position: absolute;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all var(--animation-duration) ease-in;
+}
+
+.project:hover .project__description {
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+
+.project__description h3 {
+    color: var(--color-white);
+}
+
+.project__description h3::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    margin-left: -12px;
+    margin-top: 8px;
+    background-color: var(--color-dark-white);
+}
