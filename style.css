@@ -1,6 +1,6 @@
 /* Global */
 :root {
-    /* Color */
+    /* Color https://www.design-seeds.com/atlas_winter1/palette-overview/*/
     --color-white: #ffffff;
     --color-light-white: #F5F5F2;
     --color-dark-white: #F4F3F1;
@@ -10,6 +10,7 @@
     --color-brown: #A67A60;
     --color-dark-brown: #3D2A20;
     --color-light-brown: #D6B9A4;
+    --color-beige : #E1DFD3;
     --color-dark-grey: #565D70;
     --color-grey: #A39FA8;
     --color-light-grey: #E7EBF0;
@@ -18,7 +19,12 @@
     --color-blue: #7580A1;
     --color-light-blue: #C1C8D9;
     --color-dark-blue: #263663;
+    --color-red: #96372E;
+    --color-light-red: #E8443F;
+    --color-dark-red: #7D2C38;
+    --color-yellow: #B89757;
     --color-black: #000000;
+    
 
 
     /* Font size */
@@ -29,9 +35,9 @@
     --font-micro: 14px;
 
     /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 400;
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
 
     /* Size */
     --size-border-redius: 4px;
@@ -181,6 +187,10 @@ h1 {
 .section {
     padding: 50px;
     text-align: center;
+    margin: auto;
+}
+
+.section__container {
     max-width: var(--size-max-width);
     margin: auto;
 }
@@ -246,5 +256,66 @@ h1 {
 
 .job__period {
     font-size: var(--font-micro);
+}
+
+
+/* Skills */
+#skills {
+    background-color: var(--color-beige);
+}
+
+.skillset {
+    display: flex;
+    background-color: var(--color-light-grey);
+    color: var(--color-light-white);
+    margin: 20px 0;
+}
+
+.skillset__title {
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.skillset__left {
+    flex-basis: 60%;
+    background-color: var(--color-dark-grey);
+    padding: 20px 40px;
+}
+
+.skill {
+    margin-bottom: 23px;
+}
+
+.skill__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-grey);
+}
+
+.skill__value {
+    height: 3px;
+    background-color: var(--color-light-red);
+}
+
+.skillset__right {
+    flex-basis: 40%;
+}
+
+.tools {
+    background-color: var(--color-grey);
+}
+
+.tools, .etc {
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.etc > * {
+    color: var(--color-dark-grey);
 }
 
