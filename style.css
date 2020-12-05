@@ -111,14 +111,23 @@ h1 {
 
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-brown);
+    /* background-color: var(--color-brown); */
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
     /* max-width: var(--size-max-width);
     margin: auto; */
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar__dark {
+    background-color: var(--color-brown);
+    padding: 8px;
 }
 
 .navbar__menu {
@@ -160,6 +169,7 @@ h1 {
 #home {
     background: url('imgs/home_background.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
     /* max-width: var(--size-max-width);
     margin: auto; */
@@ -506,7 +516,7 @@ h1 {
     color: var(--color-beige);
 }
 
-/* TODO:  */
+/* TODO:  웹 반응형 마무리, 모바일 반응형 추가해야함*/
 @media screen and (max-width: 768px) {
     .navbar__toggle-btn {
         display: block;
