@@ -33,7 +33,14 @@ navbarMenu.addEventListener('click', (event) => {
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
-})
+});
+
+// 윈도우에서 스크롤을 내렸을 때 home 부분이 천천히 변하게 하기
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
