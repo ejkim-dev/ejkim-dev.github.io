@@ -123,6 +123,8 @@ h1 {
     /* max-width: var(--size-max-width);
     margin: auto; */
     transition: all var(--animation-duration) ease-in-out;
+    /* nav bar가 무슨일이 있어도 제일 위에 표시 */
+    z-index: 1;
 }
 
 #navbar.navbar__dark {
