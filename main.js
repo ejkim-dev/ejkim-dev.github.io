@@ -42,6 +42,21 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// 스크롤 내렸을 때 arrow-up 나타나기
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () =>{
+    if (window.scrollY > homeHeight / 2){
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+// arrow-up 클릭 했을 때
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
