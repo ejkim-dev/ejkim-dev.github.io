@@ -5,7 +5,7 @@
   --color-light-white: #f5f5f2;
   --color-dark-white: #f4f3f1;
   --color-light-pink: #ece3e3;
-  --color-pink: #d4c1c4;
+  --color-pink: #f29ba2;
   --color-dark-pink: #b88b92;
   --color-brown: #a67a60;
   --color-dark-brown: #3d2a20;
@@ -313,13 +313,15 @@ p {
 
 .skill__bar {
   width: 100%;
-  height: 3px;
+  height: 5px;
+  margin-top: 3px;
   background-color: var(--color-grey);
 }
 
 .skill__value {
-  height: 3px;
-  background-color: var(--color-light-red);
+  height: 5px;
+  margin-top: 3px;
+  background-color: var(--color-pink);
 }
 
 .skillset__right {
@@ -332,7 +334,7 @@ p {
 
 .tools,
 .etc {
-  padding: 25px;
+  padding: 20px;
   margin-bottom: 10px;
 }
 
@@ -408,6 +410,10 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
