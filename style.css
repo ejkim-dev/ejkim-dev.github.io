@@ -388,7 +388,7 @@ p {
   left: 4px;
   /* 평소에는 보이지 않게 설정 */
   opacity: 0;
-  transition: all var(--animation-duration) ease-in;
+  transition: all var(--animation-duration) ease-out;
 }
 
 /* .category__text {
@@ -399,6 +399,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.work__projects.anim-out {
+  opacity: 0.6;
+  transform: scale(0.98) translateY(40px);
 }
 
 .project {
