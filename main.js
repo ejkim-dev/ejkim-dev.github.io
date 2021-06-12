@@ -67,6 +67,14 @@ workBtnContainer.addEventListener('click', (e) => {
     if(filter == null){
         return;
     }
+
+    // 메뉴에서 이전 선택된 아이템에 active를 지우고, 현재 선택된 아이템에 추가
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target :
+                    e.target.parentNode;
+    target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     setTimeout(() => {
         projects.forEach((project) => {

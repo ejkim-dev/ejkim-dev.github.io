@@ -145,16 +145,21 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
+  color: var(--color-white);
   cursor: pointer;
+  border: 1px solid transparent
   border-radius: var(--size-border-redius);
 }
 
 .navbar__menu__item.active {
   border: 1px solid var(--color-white);
+  border-radius: var(--size-border-redius);
 }
 
 .navbar__menu__item:hover {
+  border: 1px solid white;
   background-color: var(--color-light-brown);
+  border-radius: var(--size-border-redius);
 }
 
 .navbar__toggle-btn {
@@ -348,7 +353,7 @@ p {
   margin: 40px;
 }
 
-.categroy__btn {
+.category__btn {
   border: 1px solid var(--color-grey);
   border-radius: var(--size-border-redius);
   font-size: var(--font-regular);
@@ -356,20 +361,20 @@ p {
   margin: 2px 5px;
 }
 
-.categroy__btn.active,
-.categroy__btn:hover {
+.category__btn.selected,
+.category__btn:hover {
   background-color: var(--color-light-brown);
   color: var(--color-white);
 }
 
-.categroy__btn.active .category__count,
-.categroy__btn:hover .category__count {
+.category__btn.selected .category__count,
+.category__btn:hover .category__count {
   opacity: 1;
   top: 0;
 }
 
-/* .categroy__btn.active .category__text,
-.categroy__btn:hover .category__text {
+/* .category__btn.active .category__text,
+.category__btn:hover .category__text {
     padding-left: 0px;
 } */
 
