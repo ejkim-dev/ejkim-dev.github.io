@@ -31,6 +31,7 @@
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
+  --font-nano: 12px;
 
   /* Font weight */
   --weight-bold: 800;
@@ -428,6 +429,7 @@ p {
 }
 
 .project__description {
+  padding: 20px;
   position: absolute;
   background-color: black;
   display: flex;
@@ -449,6 +451,17 @@ p {
 
 .project__description h3 {
   color: var(--color-pink);
+  font-size: var(--font-small);
+}
+
+.project__description span {
+  color: var(--color-light-pink);
+  font-size: var(--font-nano);
+}
+
+.project__description li {
+  color: var(--color-white);
+  font-size: var(--font-micro);
 }
 
 .project__description h3::after {
