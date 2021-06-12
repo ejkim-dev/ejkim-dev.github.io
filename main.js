@@ -24,10 +24,17 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null){
         return;
     }
-
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 
 });
+
+// 모바일 용 화면일 때 토글 버튼 클릭 시 메뉴 나타나게하기
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+   navbarMenu.classList.toggle('open') 
+});
+
 
 // "contact me" 클릭 시 해당 세션으로 이동하기
 const homeContactBtn = document.querySelector('.home__contact');
