@@ -281,7 +281,7 @@ p {
   font-size: var(--font-micro);
 }
 
-/* Skills */
+/* Training */
 #skills {
   background-color: var(--color-beige);
 }
@@ -296,10 +296,11 @@ p {
 .skillset__title {
   color: var(--color-white);
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .skillset__left {
-  flex-basis: 60%;
+  flex-basis: 100%;
   background-color: var(--color-dark-grey);
   padding: 20px 40px;
 }
@@ -310,18 +311,34 @@ p {
 
 .skill__description {
   display: flex;
+  font-size: var(--font-small);
   justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.name {
+  font-weight: bold;
+}
+
+.skill__date {
+  width: 100%;
+  font-size: var(--font-micro);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .skill__bar {
   width: 100%;
-  height: 5px;
+  height: 2px;
   margin-top: 3px;
   background-color: var(--color-grey);
 }
 
 .skill__value {
-  height: 5px;
+  height: 2px;
   margin-top: 3px;
   background-color: var(--color-pink);
 }
