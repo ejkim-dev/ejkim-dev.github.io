@@ -609,8 +609,17 @@ p {
     flex-grow: 1;
   }
 
+  .testimonial {
+    flex-direction: column;
+  }
+
+  .testimonial.reverse {
+    flex-direction: column-reverse;
+  }
+
   .testimonial__avatar {
     width: 80px;
     height: 80px;
+    margin-bottom: 10px;
   }
 }
