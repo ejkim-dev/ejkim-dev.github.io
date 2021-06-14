@@ -622,4 +622,12 @@ p {
     height: 80px;
     margin-bottom: 10px;
   }
+
+  .testimonial__speech-bubble:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+  .testimonial__speech-bubble:nth-child(even) {
+    margin-left: 20px;
+  }
 }
