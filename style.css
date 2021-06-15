@@ -82,7 +82,8 @@ h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
-  margin: 24px 0px;
+  margin: 20px 0px;
+  padding-top: 20px;
 }
 
 h2 {
@@ -221,7 +222,8 @@ p {
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 /* TODO: 모바일 반응형 적용해야됨 */
 .major {
